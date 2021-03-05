@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Text-Cluster-API",
+		"_postman_id": "634b675b-7918-b00d-d980-c67ce549be55",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://0.0.0.0:8180/unguided_cluster?dataset=http://192.168.0.127:18080/jetty_base/webapps/data/text/abcnews-mini-text.csv&no_of_clusters=30&ext=csv&col=headline_text",
+			"request": {
+				"url": {
+					"raw": "http://0.0.0.0:8180/unguided_cluster?dataset=http://192.168.0.127:18080/jetty_base/webapps/data/text/abcnews-mini-text.csv&no_of_clusters=30&col=headline_text",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8180",
+					"path": [
+						"unguided_cluster"
+					],
+					"query": [
+						{
+							"key": "dataset",
+							"value": "http://192.168.0.127:18080/jetty_base/webapps/data/text/abcnews-mini-text.csv",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "no_of_clusters",
+							"value": "30",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "col",
+							"value": "headline_text",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

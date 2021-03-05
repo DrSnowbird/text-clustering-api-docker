@@ -1,0 +1,5 @@
+flask
+flasgger>=0.8.1
+httplib2
+stemming
+nltk
